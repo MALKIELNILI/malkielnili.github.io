@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="theme-color" content="#0f172a">
+<title>מרכז האפליקציות</title>
+<link rel="manifest" href="manifest.json">
+<style>
+  :root{
+    --bg:#0f172a;
+    --card:#1e293b;
+    --accent:#1d4ed8;
+    --accent2:#059669;
+    --gold:#fde68a;
+    --text:#f1f5f9;
+    --muted:#94a3b8;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+    background:linear-gradient(160deg,#0f172a,#1e293b 60%,#0f172a);
+    color:var(--text);
+    min-height:100vh;
+    padding:28px 16px 60px;
+  }
+  .header{
+    text-align:center;
+    margin-bottom:28px;
+  }
+  .header .eyebrow{
+    color:var(--gold);
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:1px;
+    margin-bottom:6px;
+  }
+  .header h1{
+    font-size:26px;
+    font-weight:800;
+    margin:0;
+  }
+  .grid{
+    max-width:520px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+  a.app{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    background:var(--card);
+    border:1px solid rgba(255,255,255,0.06);
+    border-radius:16px;
+    padding:16px 16px;
+    text-decoration:none;
+    color:var(--text);
+    box-shadow:0 2px 10px rgba(0,0,0,0.25);
+    transition:transform .12s ease, background .12s ease;
+  }
+  a.app:active{
+    transform:scale(0.97);
+    background:#26364d;
+  }
+  .icon{
+    width:46px;height:46px;
+    border-radius:12px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:22px;
+    flex-shrink:0;
+  }
+  .info{flex:1;min-width:0;}
+  .info .name{
+    font-weight:700;
+    font-size:16px;
+    margin-bottom:2px;
+  }
+  .info .desc{
+    font-size:12.5px;
+    color:var(--muted);
+  }
+  .arrow{color:var(--muted);font-size:18px;}
+  .footer{
+    text-align:center;
+    color:var(--muted);
+    font-size:11px;
+    margin-top:36px;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <div class="eyebrow">תפארת מישאל · הליכות עולם</div>
+    <h1>מרכז האפליקציות</h1>
+  </div>
+
+  <div class="grid">
+    <a class="app" href="https://malkielnili.github.io/kollel-shishi/">
+      <div class="icon" style="background:#1d4ed8">📖</div>
+      <div class="info">
+        <div class="name">כולל שישי</div>
+        <div class="desc">מעקב תשלומים ואברכים</div>
+      </div>
+      <div class="arrow">‹</div>
+    </a>
+
+    <a class="app" href="https://malkielnili.github.io/sarikow/">
+      <div class="icon" style="background:#059669">💰</div>
+      <div class="info">
+        <div class="name">סריקוב</div>
+        <div class="desc">ניהול כספים ומלגות</div>
+      </div>
+      <div class="arrow">‹</div>
+    </a>
+
+    <a class="app" href="https://malkielnili.github.io/halichot-olam/">
+      <div class="icon" style="background:#7c2d12">🏛️</div>
+      <div class="info">
+        <div class="name">תפארת מישאל – הליכות עולם</div>
+        <div class="desc">ניהול כספי העמותה</div>
+      </div>
+      <div class="arrow">‹</div>
+    </a>
+
+    <a class="app" href="https://malkielnili.github.io/shabbat-manager/">
+      <div class="icon" style="background:#7e22ce">🕯️</div>
+      <div class="info">
+        <div class="name">ניהול שבתות אירוח</div>
+        <div class="desc">שיבוץ ומעקב אירוח</div>
+      </div>
+      <div class="arrow">‹</div>
+    </a>
+
+    <a class="app" href="https://malkielnili.github.io/board-app/">
+      <div class="icon" style="background:#b45309">🪑</div>
+      <div class="info">
+        <div class="name">אלי בעזרי הליכות עולם</div>
+        <div class="desc">ניהול בית המדרש</div>
+      </div>
+      <div class="arrow">‹</div>
+    </a>
+
+    <a class="app" href="https://malkielnili.github.io/keren-hashiurim/">
+      <div class="icon" style="background:#0e7490">📚</div>
+      <div class="info">
+        <div class="name">קרן השיעורים</div>
+        <div class="desc">מעקב קרן ותשלומים</div>
+      </div>
+      <div class="arrow">‹</div>
+    </a>
+
+    <a class="app" href="https://malkielnili.github.io/melavim/">
+      <div class="icon" style="background:#be123c">🤝</div>
+      <div class="info">
+        <div class="name">מלווים</div>
+        <div class="desc">מעקב תשלומים</div>
+      </div>
+      <div class="arrow">‹</div>
+    </a>
+  </div>
+
+  <div class="footer">מלכיאל · כל האפליקציות במקום אחד</div>
+</body>
+</html>
